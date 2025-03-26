@@ -16,12 +16,8 @@
         "@types/node": "^16.18.126",
         "@types/react": "^19.0.12",
         "@types/react-dom": "^19.0.4",
-        "framer-motion": "^12.6.0",
         "react": "^19.0.0",
         "react-dom": "^19.0.0",
-        "react-google-recaptcha": "^3.1.0",
-        "react-google-recaptcha-v3": "^1.10.1",
-        "react-icons": "^5.5.0",
         "react-router-dom": "^7.4.0",
         "react-scripts": "5.0.1",
         "typescript": "^4.9.5",
@@ -29,7 +25,6 @@
       },
       "devDependencies": {
         "@tailwindcss/line-clamp": "^0.4.4",
-        "@types/react-google-recaptcha": "^2.1.9",
         "autoprefixer": "^10.4.21",
         "postcss": "^8.5.3",
         "tailwindcss": "^3.3.5"
@@ -3882,16 +3877,6 @@
         "@types/react": "^19.0.0"
       }
     },
-    "node_modules/@types/react-google-recaptcha": {
-      "version": "2.1.9",
-      "resolved": "https://registry.npmjs.org/@types/react-google-recaptcha/-/react-google-recaptcha-2.1.9.tgz",
-      "integrity": "sha512-nT31LrBDuoSZJN4QuwtQSF3O89FVHC4jLhM+NtKEmVF5R1e8OY0Jo4//x2Yapn2aNHguwgX5doAq8Zo+Ehd0ug==",
-      "dev": true,
-      "license": "MIT",
-      "dependencies": {
-        "@types/react": "*"
-      }
-    },
     "node_modules/@types/resolve": {
       "version": "1.17.1",
       "resolved": "https://registry.npmjs.org/@types/resolve/-/resolve-1.17.1.tgz",
@@ -5955,12 +5940,12 @@
       "license": "MIT"
     },
     "node_modules/cookie": {
-      "version": "1.0.2",
-      "resolved": "https://registry.npmjs.org/cookie/-/cookie-1.0.2.tgz",
-      "integrity": "sha512-9Kr/j4O16ISv8zBBhJoi4bXOYNTkFLOqSL3UDB0njXxCXNezjeyVrJyGOWtgfs/q2km1gwBcfH8q1yEGoMYunA==",
+      "version": "0.7.1",
+      "resolved": "https://registry.npmjs.org/cookie/-/cookie-0.7.1.tgz",
+      "integrity": "sha512-6DnInpx7SJ2AK3+CTUE/ZM0vWTUboZCegxhC2xiIydHR9jNuTAASBrfEpHhiGOZw/nX51bHt6YQl8jsGo4y/0w==",
       "license": "MIT",
       "engines": {
-        "node": ">=18"
+        "node": ">= 0.6"
       }
     },
     "node_modules/cookie-signature": {
@@ -7975,15 +7960,6 @@
         "url": "https://opencollective.com/express"
       }
     },
-    "node_modules/express/node_modules/cookie": {
-      "version": "0.7.1",
-      "resolved": "https://registry.npmjs.org/cookie/-/cookie-0.7.1.tgz",
-      "integrity": "sha512-6DnInpx7SJ2AK3+CTUE/ZM0vWTUboZCegxhC2xiIydHR9jNuTAASBrfEpHhiGOZw/nX51bHt6YQl8jsGo4y/0w==",
-      "license": "MIT",
-      "engines": {
-        "node": ">= 0.6"
-      }
-    },
     "node_modules/express/node_modules/debug": {
       "version": "2.6.9",
       "resolved": "https://registry.npmjs.org/debug/-/debug-2.6.9.tgz",
@@ -8472,33 +8448,6 @@
         "url": "https://github.com/sponsors/rawify"
       }
     },
-    "node_modules/framer-motion": {
-      "version": "12.6.0",
-      "resolved": "https://registry.npmjs.org/framer-motion/-/framer-motion-12.6.0.tgz",
-      "integrity": "sha512-91XLZ3VwDlXe9u2ABhTzYBiFQ/qdoiqyTiTCQDDJ4es5/5lzp76hdB+WG7gcNklcQlOmfDZQqVO48tqzY9Z/bQ==",
-      "license": "MIT",
-      "dependencies": {
-        "motion-dom": "^12.6.0",
-        "motion-utils": "^12.5.0",
-        "tslib": "^2.4.0"
-      },
-      "peerDependencies": {
-        "@emotion/is-prop-valid": "*",
-        "react": "^18.0.0 || ^19.0.0",
-        "react-dom": "^18.0.0 || ^19.0.0"
-      },
-      "peerDependenciesMeta": {
-        "@emotion/is-prop-valid": {
-          "optional": true
-        },
-        "react": {
-          "optional": true
-        },
-        "react-dom": {
-          "optional": true
-        }
-      }
-    },
     "node_modules/fresh": {
       "version": "0.5.2",
       "resolved": "https://registry.npmjs.org/fresh/-/fresh-0.5.2.tgz",
@@ -8953,21 +8902,6 @@
       "bin": {
         "he": "bin/he"
       }
-    },
-    "node_modules/hoist-non-react-statics": {
-      "version": "3.3.2",
-      "resolved": "https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz",
-      "integrity": "sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==",
-      "license": "BSD-3-Clause",
-      "dependencies": {
-        "react-is": "^16.7.0"
-      }
-    },
-    "node_modules/hoist-non-react-statics/node_modules/react-is": {
-      "version": "16.13.1",
-      "resolved": "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz",
-      "integrity": "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==",
-      "license": "MIT"
     },
     "node_modules/hoopy": {
       "version": "0.1.4",
@@ -11597,21 +11531,6 @@
         "mkdirp": "bin/cmd.js"
       }
     },
-    "node_modules/motion-dom": {
-      "version": "12.6.0",
-      "resolved": "https://registry.npmjs.org/motion-dom/-/motion-dom-12.6.0.tgz",
-      "integrity": "sha512-1s/+/V0ny/gfhocSSf0qhkspZK2da7jrwGw7xHzgiQPcimdHaPRcRCoJ3OxEZYBNzy3ma1ERUD+eUStk6a9pQw==",
-      "license": "MIT",
-      "dependencies": {
-        "motion-utils": "^12.5.0"
-      }
-    },
-    "node_modules/motion-utils": {
-      "version": "12.5.0",
-      "resolved": "https://registry.npmjs.org/motion-utils/-/motion-utils-12.5.0.tgz",
-      "integrity": "sha512-+hFFzvimn0sBMP9iPxBa9OtRX35ZQ3py0UHnb8U29VD+d8lQ8zH3dTygJWqK7av2v6yhg7scj9iZuvTS0f4+SA==",
-      "license": "MIT"
-    },
     "node_modules/ms": {
       "version": "2.1.3",
       "resolved": "https://registry.npmjs.org/ms/-/ms-2.1.3.tgz",
@@ -13928,19 +13847,6 @@
       "integrity": "sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==",
       "license": "MIT"
     },
-    "node_modules/react-async-script": {
-      "version": "1.2.0",
-      "resolved": "https://registry.npmjs.org/react-async-script/-/react-async-script-1.2.0.tgz",
-      "integrity": "sha512-bCpkbm9JiAuMGhkqoAiC0lLkb40DJ0HOEJIku+9JDjxX3Rcs+ztEOG13wbrOskt3n2DTrjshhaQ/iay+SnGg5Q==",
-      "license": "MIT",
-      "dependencies": {
-        "hoist-non-react-statics": "^3.3.0",
-        "prop-types": "^15.5.0"
-      },
-      "peerDependencies": {
-        "react": ">=16.4.1"
-      }
-    },
     "node_modules/react-dev-utils": {
       "version": "12.0.1",
       "resolved": "https://registry.npmjs.org/react-dev-utils/-/react-dev-utils-12.0.1.tgz",
@@ -14064,41 +13970,6 @@
       "integrity": "sha512-SN/U6Ytxf1QGkw/9ve5Y+NxBbZM6Ht95tuXNMKs8EJyFa/Vy/+Co3stop3KBHARfn/giv+Lj1uUnTfOJ3moFEQ==",
       "license": "MIT"
     },
-    "node_modules/react-google-recaptcha": {
-      "version": "3.1.0",
-      "resolved": "https://registry.npmjs.org/react-google-recaptcha/-/react-google-recaptcha-3.1.0.tgz",
-      "integrity": "sha512-cYW2/DWas8nEKZGD7SCu9BSuVz8iOcOLHChHyi7upUuVhkpkhYG/6N3KDiTQ3XAiZ2UAZkfvYKMfAHOzBOcGEg==",
-      "license": "MIT",
-      "dependencies": {
-        "prop-types": "^15.5.0",
-        "react-async-script": "^1.2.0"
-      },
-      "peerDependencies": {
-        "react": ">=16.4.1"
-      }
-    },
-    "node_modules/react-google-recaptcha-v3": {
-      "version": "1.10.1",
-      "resolved": "https://registry.npmjs.org/react-google-recaptcha-v3/-/react-google-recaptcha-v3-1.10.1.tgz",
-      "integrity": "sha512-K3AYzSE0SasTn+XvV2tq+6YaxM+zQypk9rbCgG4OVUt7Rh4ze9basIKefoBz9sC0CNslJj9N1uwTTgRMJQbQJQ==",
-      "license": "MIT",
-      "dependencies": {
-        "hoist-non-react-statics": "^3.3.2"
-      },
-      "peerDependencies": {
-        "react": "^16.3 || ^17.0 || ^18.0",
-        "react-dom": "^17.0 || ^18.0"
-      }
-    },
-    "node_modules/react-icons": {
-      "version": "5.5.0",
-      "resolved": "https://registry.npmjs.org/react-icons/-/react-icons-5.5.0.tgz",
-      "integrity": "sha512-MEFcXdkP3dLo8uumGI5xN3lDFNsRtrjbOEKDLD7yv76v4wpnEq2Lt2qeHaQOr34I/wPN3s3+N08WkQ+CW37Xiw==",
-      "license": "MIT",
-      "peerDependencies": {
-        "react": "*"
-      }
-    },
     "node_modules/react-is": {
       "version": "17.0.2",
       "resolved": "https://registry.npmjs.org/react-is/-/react-is-17.0.2.tgz",
@@ -14152,6 +14023,15 @@
       "peerDependencies": {
         "react": ">=18",
         "react-dom": ">=18"
+      }
+    },
+    "node_modules/react-router/node_modules/cookie": {
+      "version": "1.0.2",
+      "resolved": "https://registry.npmjs.org/cookie/-/cookie-1.0.2.tgz",
+      "integrity": "sha512-9Kr/j4O16ISv8zBBhJoi4bXOYNTkFLOqSL3UDB0njXxCXNezjeyVrJyGOWtgfs/q2km1gwBcfH8q1yEGoMYunA==",
+      "license": "MIT",
+      "engines": {
+        "node": ">=18"
       }
     },
     "node_modules/react-scripts": {
@@ -14225,6 +14105,55 @@
         "typescript": {
           "optional": true
         }
+      }
+    },
+    "node_modules/react-scripts/node_modules/lilconfig": {
+      "version": "3.1.3",
+      "resolved": "https://registry.npmjs.org/lilconfig/-/lilconfig-3.1.3.tgz",
+      "integrity": "sha512-/vlFKAoH5Cgt3Ie+JLhRbwOsCQePABiU3tJ1egGvyQ+33R/vcwM2Zl2QR/LzjsBeItPt3oSVXapn+m4nQDvpzw==",
+      "license": "MIT",
+      "engines": {
+        "node": ">=14"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/antonk52"
+      }
+    },
+    "node_modules/react-scripts/node_modules/tailwindcss": {
+      "version": "3.4.17",
+      "resolved": "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.4.17.tgz",
+      "integrity": "sha512-w33E2aCvSDP0tW9RZuNXadXlkHXqFzSkQew/aIa2i/Sj8fThxwovwlXHSPXTbAHwEIhBFXAedUhP2tueAKP8Og==",
+      "license": "MIT",
+      "dependencies": {
+        "@alloc/quick-lru": "^5.2.0",
+        "arg": "^5.0.2",
+        "chokidar": "^3.6.0",
+        "didyoumean": "^1.2.2",
+        "dlv": "^1.1.3",
+        "fast-glob": "^3.3.2",
+        "glob-parent": "^6.0.2",
+        "is-glob": "^4.0.3",
+        "jiti": "^1.21.6",
+        "lilconfig": "^3.1.3",
+        "micromatch": "^4.0.8",
+        "normalize-path": "^3.0.0",
+        "object-hash": "^3.0.0",
+        "picocolors": "^1.1.1",
+        "postcss": "^8.4.47",
+        "postcss-import": "^15.1.0",
+        "postcss-js": "^4.0.1",
+        "postcss-load-config": "^4.0.2",
+        "postcss-nested": "^6.2.0",
+        "postcss-selector-parser": "^6.1.2",
+        "resolve": "^1.22.8",
+        "sucrase": "^3.35.0"
+      },
+      "bin": {
+        "tailwind": "lib/cli.js",
+        "tailwindcss": "lib/cli.js"
+      },
+      "engines": {
+        "node": ">=14.0.0"
       }
     },
     "node_modules/read-cache": {
@@ -16095,33 +16024,34 @@
       "license": "MIT"
     },
     "node_modules/tailwindcss": {
-      "version": "3.4.17",
-      "resolved": "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.4.17.tgz",
-      "integrity": "sha512-w33E2aCvSDP0tW9RZuNXadXlkHXqFzSkQew/aIa2i/Sj8fThxwovwlXHSPXTbAHwEIhBFXAedUhP2tueAKP8Og==",
+      "version": "3.3.5",
+      "resolved": "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.3.5.tgz",
+      "integrity": "sha512-5SEZU4J7pxZgSkv7FP1zY8i2TIAOooNZ1e/OGtxIEv6GltpoiXUqWvLy89+a10qYTB1N5Ifkuw9lqQkN9sscvA==",
+      "dev": true,
       "license": "MIT",
       "dependencies": {
         "@alloc/quick-lru": "^5.2.0",
         "arg": "^5.0.2",
-        "chokidar": "^3.6.0",
+        "chokidar": "^3.5.3",
         "didyoumean": "^1.2.2",
         "dlv": "^1.1.3",
-        "fast-glob": "^3.3.2",
+        "fast-glob": "^3.3.0",
         "glob-parent": "^6.0.2",
         "is-glob": "^4.0.3",
-        "jiti": "^1.21.6",
-        "lilconfig": "^3.1.3",
-        "micromatch": "^4.0.8",
+        "jiti": "^1.19.1",
+        "lilconfig": "^2.1.0",
+        "micromatch": "^4.0.5",
         "normalize-path": "^3.0.0",
         "object-hash": "^3.0.0",
-        "picocolors": "^1.1.1",
-        "postcss": "^8.4.47",
+        "picocolors": "^1.0.0",
+        "postcss": "^8.4.23",
         "postcss-import": "^15.1.0",
         "postcss-js": "^4.0.1",
-        "postcss-load-config": "^4.0.2",
-        "postcss-nested": "^6.2.0",
-        "postcss-selector-parser": "^6.1.2",
-        "resolve": "^1.22.8",
-        "sucrase": "^3.35.0"
+        "postcss-load-config": "^4.0.1",
+        "postcss-nested": "^6.0.1",
+        "postcss-selector-parser": "^6.0.11",
+        "resolve": "^1.22.2",
+        "sucrase": "^3.32.0"
       },
       "bin": {
         "tailwind": "lib/cli.js",
@@ -16129,18 +16059,6 @@
       },
       "engines": {
         "node": ">=14.0.0"
-      }
-    },
-    "node_modules/tailwindcss/node_modules/lilconfig": {
-      "version": "3.1.3",
-      "resolved": "https://registry.npmjs.org/lilconfig/-/lilconfig-3.1.3.tgz",
-      "integrity": "sha512-/vlFKAoH5Cgt3Ie+JLhRbwOsCQePABiU3tJ1egGvyQ+33R/vcwM2Zl2QR/LzjsBeItPt3oSVXapn+m4nQDvpzw==",
-      "license": "MIT",
-      "engines": {
-        "node": ">=14"
-      },
-      "funding": {
-        "url": "https://github.com/sponsors/antonk52"
       }
     },
     "node_modules/tapable": {
