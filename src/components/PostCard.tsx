@@ -1,5 +1,6 @@
 // postCardの表示を担当するコンポーネント
 import React from "react";
+import { Link } from "react-router-dom";
 
 type Props = {
   post: {
@@ -22,6 +23,12 @@ const PostCard: React.FC<Props> = ({ post }) => {
 
   return (
     <div className="bg-white rounded-lg shadow hover:shadow-md overflow-hidden">
+      <Link
+        to={`/post/${post.id}`}
+        className="text-lg font-bold hover:text-blue-600"
+      >
+        {post.title.rendered}
+      </Link>
       {thumbnail && (
         <img src={thumbnail} alt="" className="w-full h-48 object-cover" />
       )}

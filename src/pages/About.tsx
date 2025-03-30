@@ -7,7 +7,7 @@ const About: React.FC = () => {
       {/* 上部プロフィールエリア */}
       <div className="flex flex-col md:flex-row items-center gap-6">
         <img
-          src="/my-photo.jpg" // ← publicフォルダに置いた画像
+          src="/katu.JPG" // ← publicフォルダに置いた画像
           alt="プロフィール写真"
           className="w-32 h-32 rounded-full object-cover shadow"
         />

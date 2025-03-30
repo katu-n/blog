@@ -8,6 +8,8 @@ import Thanks from "./pages/Thanks";
 import About from "./pages/About";
 import PrivacyPolicy from "./pages/privacy";
 import SiteMap from "./pages/SiteMap";
+import PostPage from "./pages/PostPage";
+import PostDetail from "./pages/PostDetail";
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
         <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/posts/:id" element={<PostDetail/>}/>
         <Route path="/category/:id" element={<CategoryPage/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/contact" element={<Contact/>} />
