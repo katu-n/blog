@@ -1,5 +1,5 @@
 // components/TableOfContents.tsx
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
 type Heading = {
   id: string;
@@ -27,8 +27,8 @@ const TableOfContents: React.FC<Props> = ({ content }) => {
       const rawText = match[2];
       const id = rawText
         .toLowerCase()
-        .replace(/\s+/g, '-')
-        .replace(/[^\w\-ぁ-んァ-ン一-龯]/g, '');
+        .replace(/\s+/g, "-")
+        .replace(/[^\w\-a]/g, "");
 
       return { id, text: rawText, level };
     });

@@ -24,27 +24,26 @@ const PostCard: React.FC<Props> = ({ post }) => {
   return (
     <div className="bg-white rounded-lg shadow hover:shadow-md overflow-hidden">
       <Link
-        to={`/post/${post.id}`}
+        to={`/posts/${post.id}`}
         className="text-lg font-bold hover:text-blue-600"
       >
-        {post.title.rendered}
-      </Link>
       {thumbnail && (
-        <img src={thumbnail} alt="" className="w-full h-48 object-cover" />
-      )}
+          <img src={thumbnail} alt="" className="w-full h-48 object-cover" />
+        )}
       <div className="p-4">
         <h2
           className="text-lg font-bold"
           dangerouslySetInnerHTML={{ __html: post.title.rendered }}
-        />
+          />
         <p
           className="text-sm text-gray-600 line-clamp-3"
           dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }}
-        />
+          />
         <p className="text-xs text-gray-400 mt-2">
           {new Date(post.date).toLocaleDateString()}
         </p>
       </div>
+          </Link>
     </div>
   );
 };

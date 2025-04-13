@@ -1,5 +1,6 @@
 import React from "react";
-import { FaTwitter, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaInstagram } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
 
 const About: React.FC = () => {
   return (
@@ -7,23 +8,39 @@ const About: React.FC = () => {
       {/* 上部プロフィールエリア */}
       <div className="flex flex-col md:flex-row items-center gap-6">
         <img
-          src="/katu.JPG" // ← publicフォルダに置いた画像
+          src="/katu.png"
           alt="プロフィール写真"
           className="w-32 h-32 rounded-full object-cover shadow"
         />
         <div>
-          <h1 className="text-3xl font-bold text-blue-600 mb-2">このブログについて</h1>
+          <h1 className="text-3xl font-bold text-blue-600 mb-2">
+            このブログについて
+          </h1>
           <p className="text-gray-700">
-            Webエンジニア・大学院生として活動中。React / TypeScript / WordPress などを使った開発を得意としています。
+            Webエンジニア・大学院生として活動中。React / TypeScript / WordPress
+            /GAS などを使った開発を得意としています。
+            趣味はドライブと読書で、技術だけでなく日常からも学びを得ることを大切にしています。
           </p>
         </div>
       </div>
 
       {/* 自己紹介 */}
-      <section>
+      <section className="mb-6">
+        <h2 className="text-xl font-semibold mb-2">自己紹介</h2>
+        <p className="text-gray-800 leading-relaxed">
+          はじめまして、Webエンジニア・大学院生の
+          <span className="font-bold">Katu</span>です。
+          大学院で流体工学を専攻しつつ、Web開発の世界にも飛び込んで学びを深めています。
+          「探究心」と「忍耐強さ」を持って成長し続けることを大切にしており、このブログもその一環として立ち上げました。
+        </p>
+      </section>
+
+      {/* このブログの目的 */}
+      <section className="mb-6">
         <h2 className="text-xl font-semibold mb-2">このブログの目的</h2>
         <p className="text-gray-800 leading-relaxed">
-          学びや実務の中で得た知見をアウトプットしつつ、同じ道を進む仲間や学習者の助けになればと思い、立ち上げました。
+          学びや実務の中で得た知識をアウトプットし、同じ道を歩む仲間たちの力になりたいと思っています。
+          また、技術だけでなく、学ぶ楽しさや日々の気づきも共有していきたいです。
         </p>
       </section>
 
@@ -43,36 +60,36 @@ const About: React.FC = () => {
         <h2 className="text-xl font-semibold mb-2">SNS</h2>
         <ul className="space-y-2 text-gray-800">
           <li className="flex items-center gap-2">
-            {FaTwitter({})}
+            {BsTwitterX({})}
             <a
-              href="https://x.com/yourhandle"
+              href="https://x.com/katu_kobe"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline"
             >
-              @yourhandle
+              @katu_kobe
             </a>
           </li>
           <li className="flex items-center gap-2">
             {FaGithub({})}
             <a
-              href="https://github.com/yourname"
+              href="https://github.com/katu-n"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline"
             >
-              github.com/yourname
+              github.com/katu-n
             </a>
           </li>
           <li className="flex items-center gap-2">
             {FaInstagram({})}
             <a
-              href="https://instagram.com/yourinsta"
+              href="https://instagram.com/katu_script"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline"
             >
-              @yourinsta
+              @katu_script
             </a>
           </li>
         </ul>
